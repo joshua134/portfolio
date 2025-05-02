@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { AboutSection } from "../components/AboutSection";
 import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
@@ -32,6 +33,7 @@ const Home: React.FC  = () => {
 
             {/* Footer Section */}
             <Footer />
+            <Analytics /> {/* Add Analytics component */}
         </div>
     );
 };
